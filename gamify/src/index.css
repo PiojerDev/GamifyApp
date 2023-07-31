@@ -1,0 +1,66 @@
+*{margin:0;
+padding:0;
+box-sizing:border-box;}
+.main{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+body{
+  font-family: 'ArcadeClassic', sans-serif;
+  background:url("./images/back.jpg");
+  background-position: center center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  width:100vw;
+  height:100vh;
+
+}
+#canvas1{
+  
+  position: relative;
+  width:600px;
+  height:600px;
+
+}
+
+.health{
+  width:500px;
+  height:100px;
+  
+}
+
+.app{
+  display:flex;
+  justify-content: center;
+  margin-top:20px;
+  
+}
+
+.app-in{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text{
+  text-align: center;
+  text-shadow: 5px 0px 16px rgba(0, 0, 0, 1);
+  color:white;
+}
+.bar{
+  width:500px;
+  height:50px;
+  border:1px solid black;
+  display:flex;
+  justify-content:flex-start;
+  
+  
+}
+.bar-part{
+  width:auto;
+  border:1px solid black;
+  flex:1;
+}
