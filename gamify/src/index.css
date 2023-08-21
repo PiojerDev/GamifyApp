@@ -47,6 +47,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100vw;
+  overflow: hidden;
 }
 .text {
   text-align: center;
@@ -74,6 +75,15 @@ body {
   opacity: 0;
   overflow: hidden;
 }
+.end {
+  animation: end 5s cubic-bezier(0.5, 1, 0.89, 1) 0s 1 normal forwards;
+  position: absolute;
+  font-size: 10em;
+  color: white;
+  text-shadow: 0px 6px 6px red;
+  opacity: 0;
+  overflow: hidden;
+}
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
@@ -81,6 +91,29 @@ body {
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+.zoom-in-out-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zoom-in-out-box h1 {
+  font-size: 10vw;
+  color: green;
+  text-shadow: 0px 6px 6px white;
+  animation: zoom-in-zoom-out 1s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 @-webkit-keyframes zoomIn {
   0% {
